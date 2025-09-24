@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.new-game-btn {
+  @apply btn btn-info btn-wide border-[#D7D7D7] text-base font-semibold animate-bounce;
+}

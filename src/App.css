@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.message-section {
+  @apply text-center rounded-md max-w-[350px] min-h-16 w-full mb-7 overflow-hidden;
+}
+
+.guess-message-container {
+  @apply p-3 border border-dashed border-[#323232];
+}
+
+.language-lost {
+  @apply before:content-["💀"] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#dddddd13] before:backdrop-blur-xs opacity-70 before:flex before:justify-center before:items-center;
+}
+
+.keyboard-btn {
+  @apply btn size-10 p-0 text-[#1E1E1E] bg-[#FCBA29] border-[#D7D7D7] text-base font-semibold font-['Hanken_Grotesk'] uppercase disabled:!bg-[#fcba29] disabled:opacity-40 disabled:!cursor-not-allowed disabled:pointer-events-auto;
+}
+
+.letter-span {
+  @apply bg-[#323232] inline-flex items-center justify-center size-10 border-b border-[#F9F4DA] text-lg font-bold shadow-lg uppercase;
+}
