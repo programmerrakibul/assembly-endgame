@@ -1,6 +1,8 @@
+import type { JSX } from "react";
+
 import { languages } from "../utilities/languages";
 
-const Header = () => {
+const Header = (): JSX.Element => {
   return (
     <header className="text-center mb-7">
       <h1 className="text-2xl sm:text-3xl">Assembly: Endgame</h1>

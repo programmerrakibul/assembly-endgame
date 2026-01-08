@@ -1,4 +1,6 @@
-export const languages = [
+import type { Language } from "../types";
+
+export const languages: Language[] = [
   {
     name: "HTML",
     backgroundColor: "#E2680F",

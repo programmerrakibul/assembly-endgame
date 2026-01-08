@@ -1,4 +1,6 @@
-const Welcome = () => {
+import type { JSX } from "react";
+
+const Welcome = (): JSX.Element => {
   return (
     <div className="bg-[#ffab91] p-3 border border-dashed border-[#323232]">
       <h3 className="text-xl text-[#282726]">

@@ -1,4 +1,4 @@
-export const words = [
+export const words: string[] = [
   "about",
   "account",
   "across",
@@ -435,7 +435,6 @@ export const words = [
   "thought",
   "thread",
   "throat",
-  "through",
   "through",
   "thumb",
   "thunder",

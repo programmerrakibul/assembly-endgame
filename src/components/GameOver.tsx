@@ -1,6 +1,9 @@
+import type { IsGameOverProps } from "../types";
+import type { JSX } from "react";
+
 import { languages } from "../utilities/languages";
 
-const GameOver = ({ isGameWon, isGameLost }) => {
+const GameOver = ({ isGameWon, isGameLost }: IsGameOverProps): JSX.Element => {
   return (
     <div
       className={`${isGameWon && "bg-[#10A95B]"} ${
@@ -15,7 +18,7 @@ const GameOver = ({ isGameWon, isGameLost }) => {
         {isGameWon && "Well done! 🎉"}
         {isGameLost &&
           `You lose! Better start learning ${
-            languages[languages.length - 1].name
+            languages[languages?.length - 1].name || "assembly"
           } 😭`}
       </span>
     </div>
